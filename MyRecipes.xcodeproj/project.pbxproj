@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1E5DB6293F738A00F6DB35 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E5DB5293F738A00F6DB35 /* ImageCollectionViewCell.swift */; };
+		9C1E5DB9293F84A000F6DB35 /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E5DB8293F84A000F6DB35 /* ModuleBuilder.swift */; };
+		9C1E5DBB293F84A500F6DB35 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E5DBA293F84A500F6DB35 /* Router.swift */; };
+		9C1E5DBE293F8B4D00F6DB35 /* ImageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E5DBD293F8B4D00F6DB35 /* ImageCellViewModel.swift */; };
 		9C6BE8A9293E3679007CCEC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BE8A8293E3679007CCEC3 /* AppDelegate.swift */; };
 		9C6BE8AB293E3679007CCEC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BE8AA293E3679007CCEC3 /* SceneDelegate.swift */; };
-		9C6BE8AD293E3679007CCEC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BE8AC293E3679007CCEC3 /* ViewController.swift */; };
-		9C6BE8B0293E3679007CCEC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE8AE293E3679007CCEC3 /* Main.storyboard */; };
+		9C6BE8AD293E3679007CCEC3 /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BE8AC293E3679007CCEC3 /* RecipesListViewController.swift */; };
 		9C6BE8B2293E367A007CCEC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE8B1293E367A007CCEC3 /* Assets.xcassets */; };
 		9C6BE8B5293E367A007CCEC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BE8B3293E367A007CCEC3 /* LaunchScreen.storyboard */; };
+		9C6BE8C1293E377B007CCEC3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9C6BE8C0293E377B007CCEC3 /* SnapKit */; };
+		9C6BE8CD293E3AF7007CCEC3 /* RecipesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BE8CC293E3AF7007CCEC3 /* RecipesList.swift */; };
+		9C6BE8D1293E3B64007CCEC3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BE8D0293E3B64007CCEC3 /* DetailViewController.swift */; };
+		9CAC13C2293E61D400075CE6 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC13C1293E61D400075CE6 /* NetworkTask.swift */; };
+		9CC33887293F12FA00DA1C7D /* RecipeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC33886293F12FA00DA1C7D /* RecipeCellViewModel.swift */; };
+		9CC33889293F131000DA1C7D /* RecipeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC33888293F131000DA1C7D /* RecipeListViewModel.swift */; };
+		9CC3388B293F17EF00DA1C7D /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3388A293F17EF00DA1C7D /* DetailsViewModel.swift */; };
+		9CEBD84D293E3FBC00178DC5 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEBD84C293E3FBC00178DC5 /* RecipeTableViewCell.swift */; };
+		9CEBD850293E41FB00178DC5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 9CEBD84F293E41FB00178DC5 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C1E5DB5293F738A00F6DB35 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9C1E5DB8293F84A000F6DB35 /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		9C1E5DBA293F84A500F6DB35 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		9C1E5DBD293F8B4D00F6DB35 /* ImageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellViewModel.swift; sourceTree = "<group>"; };
 		9C6BE8A5293E3679007CCEC3 /* MyRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6BE8A8293E3679007CCEC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6BE8AA293E3679007CCEC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9C6BE8AC293E3679007CCEC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9C6BE8AF293E3679007CCEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C6BE8AC293E3679007CCEC3 /* RecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
 		9C6BE8B1293E367A007CCEC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C6BE8B4293E367A007CCEC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C6BE8B6293E367A007CCEC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C6BE8CC293E3AF7007CCEC3 /* RecipesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesList.swift; sourceTree = "<group>"; };
+		9C6BE8D0293E3B64007CCEC3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9CAC13C1293E61D400075CE6 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		9CC33886293F12FA00DA1C7D /* RecipeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCellViewModel.swift; sourceTree = "<group>"; };
+		9CC33888293F131000DA1C7D /* RecipeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListViewModel.swift; sourceTree = "<group>"; };
+		9CC3388A293F17EF00DA1C7D /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
+		9CEBD84C293E3FBC00178DC5 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +53,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CEBD850293E41FB00178DC5 /* SDWebImage in Frameworks */,
+				9C6BE8C1293E377B007CCEC3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C1E5DB7293F849800F6DB35 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9C1E5DB8293F84A000F6DB35 /* ModuleBuilder.swift */,
+				9C1E5DBA293F84A500F6DB35 /* Router.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9C1E5DBC293F8B0D00F6DB35 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9C1E5DB5293F738A00F6DB35 /* ImageCollectionViewCell.swift */,
+				9C1E5DBD293F8B4D00F6DB35 /* ImageCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		9C6BE89C293E3679007CCEC3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +98,95 @@
 		9C6BE8A7293E3679007CCEC3 /* MyRecipes */ = {
 			isa = PBXGroup;
 			children = (
-				9C6BE8A8293E3679007CCEC3 /* AppDelegate.swift */,
-				9C6BE8AA293E3679007CCEC3 /* SceneDelegate.swift */,
-				9C6BE8AC293E3679007CCEC3 /* ViewController.swift */,
-				9C6BE8AE293E3679007CCEC3 /* Main.storyboard */,
-				9C6BE8B1293E367A007CCEC3 /* Assets.xcassets */,
-				9C6BE8B3293E367A007CCEC3 /* LaunchScreen.storyboard */,
-				9C6BE8B6293E367A007CCEC3 /* Info.plist */,
+				9C6BE8BD293E3747007CCEC3 /* Resources */,
+				9C6BE8BC293E3744007CCEC3 /* Sources */,
 			);
 			path = MyRecipes;
+			sourceTree = "<group>";
+		};
+		9C6BE8BC293E3744007CCEC3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C6BE8BE293E3751007CCEC3 /* App */,
+				9C1E5DB7293F849800F6DB35 /* Helpers */,
+				9C6BE8CB293E3AD8007CCEC3 /* Service */,
+				9C6BE8CA293E3AD4007CCEC3 /* Model */,
+				9C6BE8C7293E3912007CCEC3 /* Modules */,
+				9C6BE8B3293E367A007CCEC3 /* LaunchScreen.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9C6BE8BD293E3747007CCEC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C6BE8B6293E367A007CCEC3 /* Info.plist */,
+				9C6BE8B1293E367A007CCEC3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C6BE8BE293E3751007CCEC3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9C6BE8A8293E3679007CCEC3 /* AppDelegate.swift */,
+				9C6BE8AA293E3679007CCEC3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9C6BE8C7293E3912007CCEC3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9C6BE8C8293E391F007CCEC3 /* ListScreen */,
+				9C6BE8C9293E3923007CCEC3 /* DetailsScreen */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9C6BE8C8293E391F007CCEC3 /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9CC33885293F12E800DA1C7D /* Cell */,
+				9C6BE8AC293E3679007CCEC3 /* RecipesListViewController.swift */,
+				9CC33888293F131000DA1C7D /* RecipeListViewModel.swift */,
+			);
+			path = ListScreen;
+			sourceTree = "<group>";
+		};
+		9C6BE8C9293E3923007CCEC3 /* DetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9C1E5DBC293F8B0D00F6DB35 /* Cell */,
+				9C6BE8D0293E3B64007CCEC3 /* DetailViewController.swift */,
+				9CC3388A293F17EF00DA1C7D /* DetailsViewModel.swift */,
+			);
+			path = DetailsScreen;
+			sourceTree = "<group>";
+		};
+		9C6BE8CA293E3AD4007CCEC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9C6BE8CC293E3AF7007CCEC3 /* RecipesList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9C6BE8CB293E3AD8007CCEC3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9CAC13C1293E61D400075CE6 /* NetworkTask.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9CC33885293F12E800DA1C7D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9CEBD84C293E3FBC00178DC5 /* RecipeTableViewCell.swift */,
+				9CC33886293F12FA00DA1C7D /* RecipeCellViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +205,10 @@
 			dependencies = (
 			);
 			name = MyRecipes;
+			packageProductDependencies = (
+				9C6BE8C0293E377B007CCEC3 /* SnapKit */,
+				9CEBD84F293E41FB00178DC5 /* SDWebImage */,
+			);
 			productName = MyRecipes;
 			productReference = 9C6BE8A5293E3679007CCEC3 /* MyRecipes.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +237,10 @@
 				Base,
 			);
 			mainGroup = 9C6BE89C293E3679007CCEC3;
+			packageReferences = (
+				9C6BE8BF293E377B007CCEC3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				9CEBD84E293E41FB00178DC5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 9C6BE8A6293E3679007CCEC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +257,6 @@
 			files = (
 				9C6BE8B5293E367A007CCEC3 /* LaunchScreen.storyboard in Resources */,
 				9C6BE8B2293E367A007CCEC3 /* Assets.xcassets in Resources */,
-				9C6BE8B0293E3679007CCEC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +267,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C6BE8AD293E3679007CCEC3 /* ViewController.swift in Sources */,
+				9CC33889293F131000DA1C7D /* RecipeListViewModel.swift in Sources */,
+				9CAC13C2293E61D400075CE6 /* NetworkTask.swift in Sources */,
+				9C1E5DB6293F738A00F6DB35 /* ImageCollectionViewCell.swift in Sources */,
+				9CC33887293F12FA00DA1C7D /* RecipeCellViewModel.swift in Sources */,
+				9C6BE8AD293E3679007CCEC3 /* RecipesListViewController.swift in Sources */,
+				9CEBD84D293E3FBC00178DC5 /* RecipeTableViewCell.swift in Sources */,
 				9C6BE8A9293E3679007CCEC3 /* AppDelegate.swift in Sources */,
 				9C6BE8AB293E3679007CCEC3 /* SceneDelegate.swift in Sources */,
+				9C6BE8CD293E3AF7007CCEC3 /* RecipesList.swift in Sources */,
+				9C6BE8D1293E3B64007CCEC3 /* DetailViewController.swift in Sources */,
+				9C1E5DBE293F8B4D00F6DB35 /* ImageCellViewModel.swift in Sources */,
+				9CC3388B293F17EF00DA1C7D /* DetailsViewModel.swift in Sources */,
+				9C1E5DB9293F84A000F6DB35 /* ModuleBuilder.swift in Sources */,
+				9C1E5DBB293F84A500F6DB35 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9C6BE8AE293E3679007CCEC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C6BE8AF293E3679007CCEC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9C6BE8B3293E367A007CCEC3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +421,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SWG4FB8T87;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyRecipes/Info.plist;
+				INFOPLIST_FILE = MyRecipes/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +448,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SWG4FB8T87;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyRecipes/Info.plist;
+				INFOPLIST_FILE = MyRecipes/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +488,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C6BE8BF293E377B007CCEC3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		9CEBD84E293E41FB00178DC5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C6BE8C0293E377B007CCEC3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C6BE8BF293E377B007CCEC3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		9CEBD84F293E41FB00178DC5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CEBD84E293E41FB00178DC5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C6BE89D293E3679007CCEC3 /* Project object */;
 }
