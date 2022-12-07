@@ -15,7 +15,6 @@ protocol RouterMain {
 protocol RouterProtocol: RouterMain {
     func initialViewController()
     func showDetailedPerson(recipe: RecipeListElement)
-    func popToRoot()
 }
 
 final class Router: RouterProtocol {
@@ -39,12 +38,6 @@ final class Router: RouterProtocol {
         if let navigationController = navigationController {
             guard let detailedViewController = assemblyBuilder?.createDetailedModule(recipe: recipe, router: self) else { return }
             navigationController.pushViewController(detailedViewController, animated: true)
-        }
-    }
-
-    func popToRoot() {
-        if let navigationController = navigationController {
-            navigationController.popToRootViewController(animated: true)
         }
     }
 }

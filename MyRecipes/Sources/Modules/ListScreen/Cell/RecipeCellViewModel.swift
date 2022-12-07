@@ -15,10 +15,10 @@ protocol RecipeCellViewModelProtocol: AnyObject {
     init(recipe: RecipeListElement)
 }
 
-class RecipeCellViewModel: RecipeCellViewModelProtocol {
+final class RecipeCellViewModel: RecipeCellViewModelProtocol {
 
     private let recipe: RecipeListElement
-
+    
     var recipeName: String {
         recipe.name
     }

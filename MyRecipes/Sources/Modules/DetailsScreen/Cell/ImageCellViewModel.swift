@@ -12,7 +12,7 @@ protocol ImageCellViewModelProtocol {
     init(imageURL: String)
 }
 
-class ImageCellViewModel: ImageCellViewModelProtocol {
+final class ImageCellViewModel: ImageCellViewModelProtocol {
     var imageURL: String?
 
     required init(imageURL: String) {

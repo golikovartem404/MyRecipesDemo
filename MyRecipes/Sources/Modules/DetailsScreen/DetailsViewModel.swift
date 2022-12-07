@@ -16,7 +16,7 @@ protocol DetailesViewModelProtocol: AnyObject {
     func cellViewModel(at indexPath: IndexPath) -> ImageCellViewModelProtocol
 }
 
-class DetailesViewModel: DetailesViewModelProtocol {
+final class DetailesViewModel: DetailesViewModelProtocol {
 
     private let recipe: RecipeListElement
 

@@ -19,7 +19,7 @@ protocol RecipesListViewModelProtocol: AnyObject {
     func searchRecipe(withText text: String)
 }
 
-class RecipesListViewModel: RecipesListViewModelProtocol {
+final class RecipesListViewModel: RecipesListViewModelProtocol {
 
     var recipes: [RecipeListElement] = []
     var filteredRecipes: [RecipeListElement]?
@@ -30,7 +30,7 @@ class RecipesListViewModel: RecipesListViewModelProtocol {
     }
 
     func fetchRecipesData(completion: @escaping() -> Void) {
-        NetworkTask.shared.getAllRecipes { result in
+        NetworkService.shared.getAllRecipes { result in
             switch result {
             case .success(let data):
                 self.recipes = data.recipes
@@ -73,10 +73,24 @@ class RecipesListViewModel: RecipesListViewModelProtocol {
     }
 
     func searchRecipe(withText text: String) {
-        if text == "" {
+        if text.isEmpty {
             filteredRecipes = recipes
         } else {
-            filteredRecipes = recipes.filter({ $0.name.lowercased().contains(text.lowercased())})
+            filteredRecipes = recipes.filter {
+                if let recipeDescription = $0.description {
+                    return (
+                        $0.name.lowercased().contains(text.lowercased()) ||
+                        $0.instructions.lowercased().contains(text.lowercased()) ||
+                        recipeDescription.lowercased().contains(text.lowercased())
+                    )
+                } else {
+                    return (
+                        $0.name.lowercased().contains(text.lowercased()) ||
+                        $0.instructions.lowercased().contains(text.lowercased())
+                    )
+                }
+            }
         }
     }
 }
+

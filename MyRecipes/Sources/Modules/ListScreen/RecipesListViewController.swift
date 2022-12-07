@@ -9,10 +9,11 @@ import UIKit
 import SnapKit
 import SDWebImage
 
-class RecipesListViewController: UIViewController {
+final class RecipesListViewController: UIViewController {
+
+    // MARK: - Properties
 
     var isFiltering = false
-
     var viewModel: RecipesListViewModel? {
         didSet {
             viewModel?.fetchRecipesData {
@@ -23,9 +24,11 @@ class RecipesListViewController: UIViewController {
         }
     }
 
+    // MARK: - Outlets
+
     private lazy var searchController: UISearchController = {
         let search = UISearchController(searchResultsController: nil)
-        search.searchBar.placeholder = "Search"
+        search.searchBar.placeholder = Constants.Strings.recipeListSearchBarPlaceholder
         search.searchResultsUpdater = self
         search.searchBar.delegate = self
         search.obscuresBackgroundDuringPresentation = false
@@ -34,11 +37,14 @@ class RecipesListViewController: UIViewController {
 
     private lazy var recipesTable: UITableView = {
         let table = UITableView()
+        table.backgroundColor = .white
         table.register(RecipeTableViewCell.self, forCellReuseIdentifier: RecipeTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
         return table
     }()
+
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +53,10 @@ class RecipesListViewController: UIViewController {
         setupLayout()
     }
 
+    // MARK: - ViewSetups
+
     private func setupView() {
-        title = "Recipes"
+        title = Constants.Strings.recipeListNavigationBarTitle
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.searchController = searchController
         view.backgroundColor = .white
@@ -65,6 +73,8 @@ class RecipesListViewController: UIViewController {
     }
 
 }
+
+// MARK: - UITableViewDataSource, Delegate Extension
 
 extension RecipesListViewController: UITableViewDataSource, UITableViewDelegate {
 
@@ -87,7 +97,7 @@ extension RecipesListViewController: UITableViewDataSource, UITableViewDelegate 
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return Constants.CellSizes.recipeCellHeight
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -99,6 +109,8 @@ extension RecipesListViewController: UITableViewDataSource, UITableViewDelegate 
         }
     }
 }
+
+// MARK: - SearchBarDelegate Extension
 
 extension RecipesListViewController: UISearchControllerDelegate, UISearchBarDelegate, UISearchResultsUpdating {
     

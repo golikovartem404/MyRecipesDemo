@@ -7,9 +7,11 @@
 
 import UIKit
 
-class ImageCollectionViewCell: UICollectionViewCell {
+final class ImageCollectionViewCell: UICollectionViewCell {
 
-    static let identifier = "ImageCollectionViewCell"
+    // MARK: - Properties
+
+    static let identifier = Constants.Strings.imageCellIdentifier
 
     var viewModel: ImageCellViewModelProtocol? {
         didSet {
@@ -17,10 +19,15 @@ class ImageCollectionViewCell: UICollectionViewCell {
         }
     }
 
+    // MARK: - Outlets
+
     lazy var image: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
+
+    // MARK: - Lifecycle
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +38,8 @@ class ImageCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    // MARK: - ViewSetups
 
     private func setupHierarchy() {
         addSubview(image)
