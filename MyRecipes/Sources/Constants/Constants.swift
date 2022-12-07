@@ -24,6 +24,7 @@ enum Constants {
     }
 
     enum Constraints {
+        // RecipeListCell Constraints
         static let recipeCellTitleTop: CGFloat = 20
         static let recipeCellTitleLeading: CGFloat = 20
         static let recipeCellTitleTrailing: CGFloat = -10
@@ -32,6 +33,7 @@ enum Constants {
         static let recipeCellDescriptionTop: CGFloat = 10
         static let recipeCellDescriptionTrailing: CGFloat = -10
 
+        // DetailScreenConstraints
         static let imageCollectionHeight: CGFloat = 0.3
         static let imageIndicatorBottom: CGFloat = -10
         static let recipeTitleTop: CGFloat = 18
@@ -47,5 +49,4 @@ enum Constants {
     enum CellSizes {
         static let recipeCellHeight: CGFloat = 110
     }
-
 }
